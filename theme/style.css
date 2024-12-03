@@ -1,0 +1,49 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9; /* Light background */
+    color: #333333; /* Darker font for contrast */
+}
+
+.theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White dropdown menu background */
+    color: #333333; /* Darker text for readability */
+    border: 1px solid #e0e0e0; /* Subtle border for definition */
+}
+
+section {
+    scroll-margin-top: 50px; /* Adjust this value to match the navbar height */
+}
+
+.theme-showcase > p > .btn {
+    margin: 5px 0;
+    background-color: #e0e0e0; /* Light gray button background */
+    color: #333333; /* Dark text for contrast */
+    border: 1px solid #cccccc; /* Subtle button border */
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+    background-color: #f5f5f5; /* Light gray navbar */
+    border-bottom: 1px solid #dddddd; /* Subtle bottom border */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #222222; /* Darker font for headings */
+    font-weight: 100;
+}
+
+p, div {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    color: #333333; /* Dark text for consistency */
+}
+
+date, heavy {
+    font-weight: 900;
+    color: #555555; /* Slightly darker for emphasis */
+}
