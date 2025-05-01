@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         section {
-            scroll-margin-top: 80px; /* Prevents content overlap by navbar */
+            /* padding-top: 10px; */
+            margin-top: -20px;
+            scroll-margin-top: 80px; /* Prevents content overlap by navbar*/
         }
 
     </style>
@@ -39,10 +41,12 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#workshop-description" style="color: #333;">About</a></li>
                     <!-- <li><a href="#target-researchers" style="color: #333;">Intended Participants</a></li> -->
-                    <li><a href="#call-for-paper" style="color: #333;">Call for Paper</a></li>
+                    <li><a href="#location" style="color: #333;">Logistics</a></li>
+                    <li><a href="#program" style="color: #333;">Program</a></li>
                     <li><a href="#organizers" style="color: #333;">Organizers</a></li>
-                    <li><a href="#submission-guidelines" style="color: #333;">Submission Guidelines</a></li>
-                    <li><a href="#important-dates" style="color: #333;">Important Dates</a></li>
+                    <li><a href="#call-for-paper" style="color: #333;">Call for Paper</a></li>
+                    
+                    <!-- <li><a href="#important-dates" style="color: #333;">Important Dates</a></li> -->
                     <li><a href="https://sensorssp.github.io/sensorssp23/" target="_blank">Past Workshop</a></li>
                 </ul>
             </div>
@@ -104,7 +108,7 @@
                     <div class="page-header">
                         <h3></h3>
                         <font size="3">
-                            <blockquote style=" padding: 10px; background-color: #EEEEEE;">
+                            <blockquote style=" padding: 2px; background-color: #EEEEEE;">
                                 <font size="3">
                                     <p>Sensors S&P Workshop is for you, if you are:
                                             <ol>
@@ -123,8 +127,7 @@
                             Attendees will engage in group brainstorming sessions on emerging technologies, discussing topics such as LLM integration with IoT devices, 
                             biosensor data handling, XR application security, and autonomous vehicle trust mechanisms. </p>
                             
-                          <p> More details on the agenda and activities are coming soon.
-                        </p>
+                
                             <!-- <p>
                                 <strong>Intended Participants:</strong>
                                 The program is specifically designed for entering tenth and eleventh graders (entering sophomores and juniors) in high schools in Western Massachusetts. A previous background in programming in a language such as Python or Java is desirable, but not necessary. A high-school background in mathematics is assumed for this program.
@@ -143,40 +146,107 @@
             </font>
             <!-- <font size="3"> -->
                 <!-- <font size="3"> -->
+        
+                    <section id="location" class="page-header">
+                        <h2>Location and Date</h2>
+                        <blockquote style="padding: 15px; background-color: #e6f2ff; border-left: 5px solid #0066cc;">
+                            <p>
+                                The workshop will be held on <strong>May 6, 2025</strong> at <strong>Wood Cove B</strong> room,
+                                <a href="https://studentcenter.uci.edu/events/venue-information/the-uci-student-center/" target="_blank">UCI Student Center</a>, University of California, Irvine.
+                            </p>
+                            <p>
+                                <em>All times listed in the program are in Pacific Time (PT).</em>
+                            </p>
+                        </blockquote>
+                    </section>
+                    
+                    <section id="program" class="page-header">
+    <h2>Program</h2>
+    <div style="padding: 20px; background-color: #e6f2ff; border-left: 5px solid #0066cc;">
 
-        <section id="call-for-paper" class="page-header">
-        <!-- <div id="topics-of-interest" class="page-header"> -->
-            <h2>Topics of Interest</h2>
-            The event will cover a wide range of topics related to security and privacy in sensing systems, including but not limited to:
-            <ul>
-                <li>Assessing and mitigating security risks in safety-critical IoT applications</li>
-                <li>Secure communication protocols for sensor networks</li>
-                <li>Secure real-time data stream processing in edge and cloud-integrated IoT systems</li>
-                <li>Secure and private sensor-fusion pipelines</li>
-                <li>Authentication and access control mechanisms in IoT sensing systems</li>
-                <li>Intrusion detection and response techniques for sensor networks</li>
-                <li>Blockchain and distributed ledger technologies for secure IoT sensing</li>
-                <li>Lightweight cryptographic algorithms for resource-constrained IoT devices</li>
-                <li>Privacy-preserving machine learning and AI techniques for sensing systems</li>
-                <li>Privacy-enhancing technologies for sensor data protection</li>
-                <li>Security and privacy challenges in IoT system interoperability</li>
-                <li>Security and privacy issues in deep learning models for distributed sensing systems</li>
-                <li>End user security and privacy with human sensing interfaces</li>
-                <li>Privacy and security in large language model (LLM) integration with IoT devices</li>
-                <li>Cross-device knowledge sharing in IoT environments leveraging LLMs</li>
-                <li>Quantum-resilient cryptography for future IoT security</li>
-                <li>Sustainability-driven security designs for IoT and edge computing environments</li>
-                <li>Safety and security in biosensor data handling and health monitoring devices</li>
-                <li>Security and privacy measures for XR (Extended Reality) applications and interfaces</li>
-                <li>Safety and trust mechanisms in autonomous vehicles and vehicle-to-everything (V2X) networks</li>
-                <li>Dynamic risk assessment frameworks for evolving IoT ecosystems</li>
-                <li>Legal, regulatory, and ethical considerations in IoT security and privacy</li>
-                <li>Ethical and safety concerns in multi-sensor environments for smart cities and transportation</li>
-            </ul>
-        <!-- </div> -->
 
-    </section>
+    <style>
+    .program-table {
+        background-color: #f7fbfd; /* Light background tint for table */
+    }
 
+    .program-table thead {
+        background-color: #d9edf7; /* Light blue for header */
+    }
+
+    .program-table th, .program-table td {
+        width: 25%;
+        vertical-align: top;
+    }
+
+    .program-table th:nth-child(2),
+    .program-table td:nth-child(2) {
+        width: 45%;
+    }
+
+    .program-table th:nth-child(3),
+    .program-table td:nth-child(3) {
+        width: 30%;
+    }
+    </style>
+
+    <h3>Session 1: Securing Sensors</h3>
+    <table class="table table-striped program-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Title</th>
+                <th>Speakers / Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>9:00</td><td>Welcome!</td><td></td></tr>
+            <tr><td>9:10</td><td>Talk: Secure On-Sensor Machine Learning</td><td>Swapnil Saha, Mahesh Chowdhary (STMicroelectronics)</td></tr>
+            <tr><td>9:35</td><td>Talk: Security of AV Perception Systems</td><td>Xugui Zhou (Louisiana State University)</td></tr>
+            <tr><td>10:00</td><td>Paper: Towards Understanding User Privacy Concerns of Internet of Things Sensor Data</td><td>Dipu Ram Roy (BUET), Jieqiong Zhao (Augusta), Shijia Pan (UC Merced), Shiwei Fang (Augusta)</td></tr>
+            <tr><td>10:15</td><td>Paper: Intermittent Power, Continuous Protection: Security and Privacy for Batteryless Devices in IoT</td><td>Thea U. Kjeldsmark (UC Irvine), Hui Zhuang (ASU), Habiba Farrukh (UC Irvine), Muslum Ozgur Ozmen (ASU)</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Session 2: Sensing Applications</h3>
+    <table class="table table-striped program-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Title</th>
+                <th>Speakers / Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>11:00</td><td>Talk: Towards Trustworthy XR: Safety, Security, and Privacy Concerns in XR in the Era of AI</td><td>Khaza Anuarul Hoque (University of Missouri)</td></tr>
+            <tr><td>11:25</td><td>Talk: Toward Mobile AI Systems with Physical World Perception</td><td>Yi Ding (UT Dallas)</td></tr>
+            <tr><td>11:50</td><td>Talk: Attacking mmWave Sensing with Meta-material-enhanced Tags</td><td>Zhengxiong Li (UC Denver)</td></tr>
+            <tr><td>12:15</td><td>Paper: mmVanish: Extending the Vanish Attack for Multi-Radar Exploitation of mmWave Sensing with Meta-material Tags</td><td>Xinmin Fang (UC Denver), Hailu Xu (CSU Long Beach), Lingfeng Tao (Oklahoma State), Zhengxiong Li (UC Denver)</td></tr>
+        </tbody>
+    </table>
+
+    <h3>Session 3: Sensing in the Age of Machine Learning</h3>
+    <table class="table table-striped program-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Title</th>
+                <th>Speakers / Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>2:00</td><td>Paper: IoTCloak: Practical Integrity Checks of Machine Learning Inference Code and Models on Tiny IoT Devices</td><td>Mehreen Jabbeen, Vireshwar Kumar, Rijurekha Sen (IIT Delhi)</td></tr>
+            <tr><td>2:15</td><td>Paper: ACLI-DPFL: Differentially Private Federated Learning with Adaptive Clipping and Local Iteration</td><td>Masanori Nakajima, Yuko Hara (Institute of Science Tokyo)</td></tr>
+            <tr><td>2:30</td><td>Talk: Safeguarding Media Integrity From The Growing Threat of Generative AI</td><td>Joseph DeGol (Steg.AI)</td></tr>
+            <tr><td>3:00</td><td>Closing</td><td></td></tr>
+        </tbody>
+    </table>
+</section>
+
+                  
+                    
+
+        
 
 
         <section id="organizers" class="page-header">
@@ -214,18 +284,39 @@
             </ul>
         </section>
 
-        <div id="keynote-speakers" class="page-header">
-            <h2>Keynote Speakers</h2>
-            <ul>
-                <b>TBD</b>
-                <!-- <li>Kevin Butler (University of Florida)</li>
-                <li>Franziska Roesner (University of Washington)</li>
-                <li>James Weimer (Vanderbilt)</li> -->
-                <!-- Add the rest of the keynote speakers -->
-            </ul>
-        </div>
-
-
+        <section id="call-for-paper" class="page-header">
+            <!-- <div id="topics-of-interest" class="page-header"> -->
+                <h2>Topics of Interest</h2>
+                The event will cover a wide range of topics related to security and privacy in sensing systems, including but not limited to:
+                <ul>
+                    <li>Assessing and mitigating security risks in safety-critical IoT applications</li>
+                    <li>Secure communication protocols for sensor networks</li>
+                    <li>Secure real-time data stream processing in edge and cloud-integrated IoT systems</li>
+                    <li>Secure and private sensor-fusion pipelines</li>
+                    <li>Authentication and access control mechanisms in IoT sensing systems</li>
+                    <li>Intrusion detection and response techniques for sensor networks</li>
+                    <li>Blockchain and distributed ledger technologies for secure IoT sensing</li>
+                    <li>Lightweight cryptographic algorithms for resource-constrained IoT devices</li>
+                    <li>Privacy-preserving machine learning and AI techniques for sensing systems</li>
+                    <li>Privacy-enhancing technologies for sensor data protection</li>
+                    <li>Security and privacy challenges in IoT system interoperability</li>
+                    <li>Security and privacy issues in deep learning models for distributed sensing systems</li>
+                    <li>End user security and privacy with human sensing interfaces</li>
+                    <li>Privacy and security in large language model (LLM) integration with IoT devices</li>
+                    <li>Cross-device knowledge sharing in IoT environments leveraging LLMs</li>
+                    <li>Quantum-resilient cryptography for future IoT security</li>
+                    <li>Sustainability-driven security designs for IoT and edge computing environments</li>
+                    <li>Safety and security in biosensor data handling and health monitoring devices</li>
+                    <li>Security and privacy measures for XR (Extended Reality) applications and interfaces</li>
+                    <li>Safety and trust mechanisms in autonomous vehicles and vehicle-to-everything (V2X) networks</li>
+                    <li>Dynamic risk assessment frameworks for evolving IoT ecosystems</li>
+                    <li>Legal, regulatory, and ethical considerations in IoT security and privacy</li>
+                    <li>Ethical and safety concerns in multi-sensor environments for smart cities and transportation</li>
+                </ul>
+            <!-- </div> -->
+    
+        </section>
+    
         <section id="submission-guidelines" class="page-header">
             <!-- <div id="submission-guidelines" class="page-header"> -->
                 <h2>Submission Guidelines</h2>
